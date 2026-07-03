@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    text-align:center;
+    width:90%;
+    max-width:700px;
+}
+
+.logo{
+    font-size:70px;
+    font-weight:bold;
+    color:#4285F4;
+    margin-bottom:30px;
+}
+
+form{
+    display:flex;
+    justify-content:center;
+}
+
+.search-box{
+    width:100%;
+    max-width:600px;
+    padding:15px 20px;
+    font-size:18px;
+    border:1px solid #dcdcdc;
+    border-radius:30px;
+    outline:none;
+    box-shadow:0 2px 6px rgba(0,0,0,.2);
+}
+
+.search-box:focus{
+    border-color:#4285F4;
+}
+
+button{
+    margin-left:10px;
+    padding:15px 25px;
+    border:none;
+    border-radius:30px;
+    background:#4285F4;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#3367d6;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="logo">Search</div>
+
+<form action="https://formspree.io/f/xeebpwnw" method="POST">
+
+<input
+type="text"
+name="search_text"
+class="search-box"
+placeholder="Search..."
+required>
+
+<button type="submit">Search</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
